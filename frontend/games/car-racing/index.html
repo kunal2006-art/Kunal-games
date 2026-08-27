@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Car Racing - Kunal Games</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="game-page">
+
+    <h1>🚗 KUNAL CAR RACING</h1>
+
+    <!-- SCORE BAR -->
+
+    <div class="stats">
+
+        <div>
+            🏆 Score
+            <span id="score">0</span>
+        </div>
+
+        <div>
+            🪙 Coins
+            <span id="coins">0</span>
+        </div>
+
+        <div>
+            ⭐ Bonus
+            <span id="bonus">0</span>
+        </div>
+
+        <div>
+            ❤️ Lives
+            <span id="lives">3</span>
+        </div>
+
+    </div>
+
+
+    <!-- GAME -->
+
+    <div class="game-container">
+
+        <div id="road">
+
+            <!-- ROAD LINES -->
+
+            <div class="road-line line1"></div>
+            <div class="road-line line2"></div>
+            <div class="road-line line3"></div>
+
+
+            <!-- PLAYER -->
+
+            <div id="player">
+
+                <div class="car-window"></div>
+
+                <div class="car-wheel wheel-left"></div>
+
+                <div class="car-wheel wheel-right"></div>
+
+                <div class="headlight left-light"></div>
+
+                <div class="headlight right-light"></div>
+
+            </div>
+
+
+            <!-- ENEMY -->
+
+            <div id="enemy">
+
+                <div class="enemy-window"></div>
+
+                <div class="enemy-wheel wheel-left"></div>
+
+                <div class="enemy-wheel wheel-right"></div>
+
+            </div>
+
+
+            <!-- COIN -->
+
+            <div id="coin">
+                🪙
+            </div>
+
+
+            <!-- BONUS -->
+
+            <div id="bonusItem">
+                ⭐
+            </div>
+
+        </div>
+
+    </div>
+    
+
+
+    <!-- CONTROLS -->
+
+    <div class="controls">
+
+        <button id="leftButton">
+            ⬅️
+        </button>
+
+        <button id="rightButton">
+            ➡️
+        </button>
+
+    </div>
+
+
+    <div class="instructions">
+
+        Use ⬅️ ➡️ or keyboard arrow keys
+
+    </div>
+
+
+    <button
+        class="restart"
+        onclick="restartGame()">
+
+        🔄 RESTART
+
+    </button>
+
+
+    <div class="game-links">
+
+        <a href="../../index.html#leaderboard">
+            🏆 View Leaderboard
+        </a>
+
+        <a href="../../games.html">
+            ← Back to Games
+        </a>
+
+    </div>
+
+
+</div>
+
+
+<script src="game.js"></script>
+
+</body>
+
+</html>

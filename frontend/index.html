@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kunal Games</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                🎮 KUNAL GAMES
+            </div>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="games.html">Games</a>
+                <a href="#leaderboard">Leaderboard</a>
+                <button id="loginBtn" onclick="openLogin()">
+    🔐 Login
+</button>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>WELCOME TO KUNAL GAMES 🎮</h1>
+
+            <p>
+                Play exciting browser games, beat your high score
+                and compete with other players!
+            </p>
+
+            <button onclick="window.location.href='games.html'">
+                PLAY NOW
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Games Section -->
+    <section id="games" class="games-section">
+
+        <h2>🔥 POPULAR GAMES</h2>
+
+        <div class="game-container">
+
+            <!-- Game 1 -->
+            <div class="game-card">
+
+                <div class="game-image">
+                    🚗
+                </div>
+
+                <h3>Car Racing</h3>
+
+                <p>
+                    Drive your car and beat the highest score!
+                </p>
+
+                <button onclick="startGame('Car Racing')">
+                    PLAY NOW
+                </button>
+
+            </div>
+
+
+            <!-- Game 2 -->
+            <div class="game-card">
+
+                <div class="game-image">
+                    🐍
+                </div>
+
+                <h3>Snake</h3>
+
+                <p>
+                    Eat the food and make your snake bigger!
+                </p>
+
+                <button onclick="startGame('Snake')">
+                    PLAY NOW
+                </button>
+
+            </div>
+
+
+            <!-- Game 3 -->
+            <div class="game-card">
+
+                <div class="game-image">
+                    🧱
+                </div>
+
+                <h3>Brick Breaker</h3>
+
+                <p>
+                    Break all the bricks and get the highest score!
+                </p>
+
+                <button onclick="startGame('Brick Breaker')">
+                    PLAY NOW
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Leaderboard -->
+    <section id="leaderboard" class="leaderboard">
+
+        
+        <a href="leaderboard.html">🏆 Leaderboard</a>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Player</th>
+                    <th>Game</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+
+           <tbody id="leaderboardBody">
+
+    <tr>
+        <td colspan="4">Loading scores...</td>
+    </tr>
+
+</tbody>
+
+        </table>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>🎮 KUNAL GAMES</h3>
+
+        <p>
+            Play • Compete • Win
+        </p>
+
+        <p>
+            © 2026 Kunal Games
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
